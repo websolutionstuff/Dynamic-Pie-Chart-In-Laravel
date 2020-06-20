@@ -6,11 +6,7 @@ use Illuminate\Http\Request;
 
 class EchartController extends Controller
 {
-    public function index(Request $request)
-    {
-    	return view('checkboxlist');
-    }
-
+    
     public function echart(Request $request)
     {
     	$fruit = Product::where('product_type','fruit')->get();
